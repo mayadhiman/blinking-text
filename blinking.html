@@ -1,0 +1,34 @@
+<html><head><title>blinking</title>
+</head>
+<body bgcolor=yellow>
+<script language="javascript">
+colors=new Array("red","blue","green")
+index=0;
+document.write("<h1 align='center'>COLORS CHANGE OF TEXT</h1>");
+r=setInterval("f()",500)
+function f()
+{ 
+if (index>3)
+{
+index=0;
+document.fgColor=colors[index];
+index++;
+}
+else
+{
+document.fgColor=colors[index];
+index++;
+}
+}
+</script></html>
+
+
+
+
+
+
+
+
+
+
+
